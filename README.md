@@ -2,10 +2,17 @@
 
 This repo demonstrate an issue with zlib, haxe and Flash.
 
+Installation:
+```shell
+haxelib install openfl
+haxelib run openfl setup
+haxelib install swf
+```
+
 The following command fails:
 
 ```shell
-haxe -main Main -swf-version 11 -debug -swf main.swf
+haxelib run openfl build loader.lime -v flash
 ```
 
 Example output:

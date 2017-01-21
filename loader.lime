@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <!-- Metadata -->
+  <meta title="Loader" package="example" version="3.0.0" company="Loader"/>
+  <app file="example.Main" main="example.Main"/>
+  <window width="420" height="520" fps="40" orientation="portrait" background="#000000" resizable="true"
+          hardware="true" borderless="false" vsync="false" fullscreen="false" antialiasing="4"
+          allow-shaders="true" require-shaders="false" depth-buffer="false" stencil-buffer="false"/>
+
+  <!-- Source -->
+  <source path="src"/>
+  <haxelib name="openfl" version="4.5.2"/>
+  <haxelib name="swf" version="2.3.1"/>
+
+  <!-- Output -->
+  <set name="BUILD_DIR" value="build/release"/>
+  <set name="BUILD_DIR" value="build/debug" if="debug"/>
+  <icon path="assets/icon.ico"/>
+</project>
